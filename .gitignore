@@ -1,47 +1,31 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Exclude Magento var dir
+var/cache
+var/session
+var/log
+var/locks
+var/export
+var/import
+var/importexport
+var/report
+var/tmp
+var/resource_config.json
+var/data-response.txt
+var/data.txt
+var/package
+/build/*
+!/build/build.sh
+!/build/gitattributes_full
+!/build/gitattributes_theme
+var/*
+!/var/.htaccess
+app/etc/*
+!app/etc/config.xml
+db/*
+!db/1_schema.sql
+db/setup_dev.bat
+!db/2_init_data.sql
+!db/3_update_baseurl.sql
+app/etc/local.xml
+/var/cache
+/skin/frontend/codazon_fastest/default/css/store/*
+/media/catalog/product/cache/*
